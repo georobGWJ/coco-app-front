@@ -1,0 +1,9 @@
+.map {
+    position: absolute;
+    bottom: 13px;
+    right: 50px;
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 5px;
+}
