@@ -16,6 +16,8 @@ Router.map(function() {
   this.route('users', function() {
     this.route('show', { path: '/:user_id' });
   });
+  this.route('requirements', function() {});
+  this.route('sats', function() {});
 });
 
 export default Router;
