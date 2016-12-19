@@ -23,7 +23,7 @@ module.exports = function(environment) {
     authorizer: 'authorizer:custom',
     routeAfterAuthentication: '/'
   };
-  
+
 
   if (environment === 'development') {
     ENV.host = 'http://localhost:3000';
@@ -47,7 +47,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'https://jwt-rails-sample-app.herokuapp.com'
+    ENV.host = 'https://coco-college-backend.herokuapp.com/'
   }
 
   return ENV;
