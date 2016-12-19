@@ -23,7 +23,7 @@ Router.map(function() {
   });
 
   this.route('requirements', function() {});
-  this.route('sats', function() {});
+  this.route('sats');
   this.route('welcome', function() {});
   this.route('messages', function() {
     this.route('comments', function() {
@@ -36,6 +36,7 @@ Router.map(function() {
     this.route('requirements', function() {
       this.route('show');
     });
+    this.route('events', function() {});
   });
   this.route('chats', function() {});
   this.route('applications', function() {});
