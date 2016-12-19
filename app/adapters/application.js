@@ -4,7 +4,7 @@ import config from '../config/environment';
 
 
 export default ActiveModelAdapter.extend(DataAdapterMixin, {
-  host: `${config.host}`,
+  // host: `${config.host}`,
+  host: `http://localhost:3000`,
   authorizer: 'authorizer:custom'
 });
-
