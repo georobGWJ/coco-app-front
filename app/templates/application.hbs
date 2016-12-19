@@ -2,7 +2,7 @@
 
   <h1 class="app-title">CoCo: Your College Counselor</h1>
   <h3 class="app-statement">Keeping students on track and parents informed.</h3>
-
+  <hr>
   {{#if session.isAuthenticated}}
     <li><a href="#">Hi, {{sessionAccount.account.email}}</a></li>
     <li><a href="#" {{action 'invalidateSession'}}>Logout</a></li>
