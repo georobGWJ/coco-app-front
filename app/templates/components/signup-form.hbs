@@ -1,4 +1,4 @@
-<div class="col-sm-6 col-sm-offset-3" stye="text-align: center">
+<div class="col-sm-6 col-sm-offset-3 signup" stye="text-align: center">
 <h2>Sign Up</h2>
 
 <form {{action "submit" on="submit"}}>
@@ -16,10 +16,10 @@
   </table>
   <br>
 
-  <label for="name">First Name</label>
+  <label for="firstName">First Name</label>
   {{input value=user.firstName placeholder="enter first name" class="form-control"}}
 
-   <label for="name">Last Name</label>
+   <label for="lastName">Last Name</label>
   {{input value=user.lastName placeholder="enter last name" class="form-control"}}
 
   <label for="email">Email</label>

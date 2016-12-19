@@ -8,16 +8,37 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('login');
   this.route('signup');
-  // this.route('users', function() {
-  //   this.route('user', { path: '/:user_id' });
-  // });
-  this.route('Sat', function() {});
+  this.route('sats', function() {});
 
   this.route('users', function() {
     this.route('show', { path: '/:user_id' });
+
+    this.route('events', { path: '/:user_id' }, function() {
+      this.route('new');
+      this.route('show');
+    });
+
+    this.route('requirements', { path: '/:user_id' }, function() {
+      this.route('show');
+    });
   });
   this.route('requirements', function() {});
   this.route('sats', function() {});
+  this.route('welcome');
+  this.route('messages', function() {
+    this.route('comments', function() {
+      this.route('new');
+    });
+    this.route('show');
+  });
+
+  this.route('user', function() {
+    this.route('mrequirements', function() {
+      this.route('show');
+    });
+  });
+  this.route('chats', function() {});
+  this.route('applications', function() {});
 });
 
 export default Router;
