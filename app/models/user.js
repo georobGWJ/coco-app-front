@@ -7,11 +7,11 @@ export default DS.Model.extend({
   email: DS.attr(),
   phoneNumber: DS.attr(),
   gradeLevel: DS.attr(),
-  address: DS.attr(),
+  streetAddress: DS.attr(),
   city: DS.attr(),
   state: DS.attr(),
-  zipcode: DS.attr(),
-  prefLanguage: DS.attr(),
+  zipCode: DS.attr(),
+  langPreference: DS.attr(),
   password: DS.attr(),
   passwordConfirmation: DS.attr()
 });

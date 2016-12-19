@@ -3,7 +3,7 @@
 
 <form {{action "submit" on="submit"}}>
 
-  <label for="name">User Type</label><br>
+  <label for="userType">User Type</label><br>
   <table>
     <tr>
       <td style="padding-right:15px;">Parent</td>
@@ -49,7 +49,7 @@
   </table>
   <br>
 
-  <label for="address">Address</label>
+  <label for="streetAddress">Address</label>
   {{input value=user.streetAddress placeholder="enter address" class="form-control"}}
 
   <label for="city">City</label>
@@ -58,7 +58,8 @@
   <label for="state">State</label>
   {{input value=user.state placeholder="CA" class="form-control"}}
 
-  <label for="zipcode">Zip Code</label>
+
+  <label for="zipCode">Zip Code</label>
   {{input value=user.zipCode placeholder="enter zipcode" class="form-control"}}<br><br>
 
   <label for="langPreference">Preferred Language</label><br>
