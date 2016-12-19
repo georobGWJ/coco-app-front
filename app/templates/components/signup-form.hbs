@@ -3,7 +3,7 @@
 
 <form {{action "submit" on="submit"}}>
 
-  <label for="name">User Type</label><br>
+  <label for="userType">User Type</label><br>
   <table>
     <tr>
       <td style="padding-right:15px;">Parent</td>
@@ -49,8 +49,8 @@
   </table>
   <br>
 
-  <label for="address">Address</label>
-  {{input value=user.address placeholder="enter address" class="form-control"}}
+  <label for="streetAddress">Address</label>
+  {{input value=user.streetAddress placeholder="enter address" class="form-control"}}
 
   <label for="city">City</label>
   {{input value=user.city placeholder="enter city" class="form-control"}}
@@ -58,18 +58,18 @@
   <label for="state">State</label>
   {{input value=user.state placeholder="CA" class="form-control"}}
 
-  <label for="zipcode">Zip Code</label>
-  {{input value=user.zipcode placeholder="enter zipcode" class="form-control"}}<br><br>
+  <label for="zipCode">Zip Code</label>
+  {{input value=user.zipCode placeholder="enter zipcode" class="form-control"}}<br><br>
 
-  <label for="prefLanguage">Preferred Language</label><br>
+  <label for="langPreference">Preferred Language</label><br>
   <table>
     <tr>
       <td style="padding-right:15px;">English</td>
-      <td>{{radio-button value='english' checked=user.prefLanguage}}</td>
+      <td>{{radio-button value='english' checked=user.langPreference}}</td>
     </tr>
     <tr>
       <td style="padding-right:15px;">Español</td>
-      <td>{{radio-button value='spanish' checked=user.prefLanguage}}</td>
+      <td>{{radio-button value='spanish' checked=user.langPreference}}</td>
     </tr>
   </table>
   <br>

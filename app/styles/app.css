@@ -7,3 +7,13 @@
     background-size: cover;
     border-radius: 5px;
 }
+
+.app-title {
+  font-family: 'Pacifico', serif;
+  font-size: 60px;
+}
+
+.app-statement {
+  font-family: 'Architects Daughter', serif;
+  font-size: 36px;
+}

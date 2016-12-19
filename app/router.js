@@ -8,8 +8,13 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('login');
   this.route('signup');
+  // this.route('users', function() {
+  //   this.route('user', { path: '/:user_id' });
+  // });
+  this.route('Sat', function() {});
+
   this.route('users', function() {
-    this.route('user', { path: '/:user_id' });
+    this.route('show', { path: '/:user_id' });
   });
 });
 
