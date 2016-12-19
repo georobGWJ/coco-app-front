@@ -46,6 +46,7 @@
     "loader.js": "^4.0.1"
   },
   "dependencies": {
-    "ember-radio-buttons": "^4.0.3"
+    "ember-radio-buttons": "^4.0.3",
+    "test": "^0.6.0"
   }
 }
