@@ -3,13 +3,7 @@
   <h1 class="app-title">CoCo: Your College Counselor</h1>
   <h3 class="app-statement">Keeping students on track and parents informed.</h3>
   <hr>
-  {{#if session.isAuthenticated}}
-    <li><a href="#">Hi, {{sessionAccount.account.email}}</a></li>
-    <li><a href="#" {{action 'invalidateSession'}}>Logout</a></li>
-  {{else}}
-    <li>{{#link-to 'login'}}Log In{{/link-to}}</li>
-    <li>{{#link-to 'signup'}}Sign Up{{/link-to}}</li>
-  {{/if}}
+
   <br>
   <div class="panel panel-default">
     <div class="panel-heading"><strong>Session Info</strong></div>
