@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findAll('messages');
+    return this.store.findAll('message');
   }
 });
